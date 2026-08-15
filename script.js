@@ -30,6 +30,31 @@ toggle.addEventListener('click', function () {
 // ===== Footerdagi yil =====
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// ===== Bo'limlar scroll paytida yumshoq paydo bo'ladi =====
+// Yashirish sinfi shu yerda qo'shiladi — JS ishlamasa, matn baribir ko'rinib turadi
+var harakatOchiq = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (harakatOchiq && 'IntersectionObserver' in window) {
+  var bolimlar = document.querySelectorAll('.service, #loyihalar, #fikrlar, #savol-javob, #aloqa');
+
+  for (var i = 0; i < bolimlar.length; i++) {
+    bolimlar[i].classList.add('reveal');
+  }
+
+  var kuzatuvchi = new IntersectionObserver(function (yozuvlar) {
+    yozuvlar.forEach(function (yozuv) {
+      if (yozuv.isIntersecting) {
+        yozuv.target.classList.add('reveal-in');
+        kuzatuvchi.unobserve(yozuv.target); // bir marta ko'rinsa yetarli
+      }
+    });
+  }, { rootMargin: '0px 0px -10% 0px' });
+
+  for (var j = 0; j < bolimlar.length; j++) {
+    kuzatuvchi.observe(bolimlar[j]);
+  }
+}
+
 // ===== Rasm hali qo'yilmagan bo'lsa, inisiallar ko'rsatiladi =====
 var photo = document.getElementById('photo');
 photo.addEventListener('error', function () {

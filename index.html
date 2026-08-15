@@ -5,20 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Xusnidinova Nozima Ashurovna — Oliy ta'lim o'qituvchisi</title>
 <meta name="description" content="Xusnidinova Nozima Ashurovna — oliy ta'lim o'qituvchisi, 10 yillik tajriba. Ta'lim dasturlari, treninglar, darslik va o'quv qo'llanmalar.">
+
+<!-- Brauzer yorlig'idagi belgi va telefon brauzeri rangi -->
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#8f5a2c">
+
+<!-- Havola Telegram yoki ijtimoiy tarmoqqa tashlanganda chiqadigan karta.
+     Manzillar to'liq yozilishi shart — karta rasmni jonli saytdan yuklaydi -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nozimaustoz.github.io/shaxsiy-sayt/">
+<meta property="og:title" content="Xusnidinova Nozima Ashurovna — Oliy ta'lim o'qituvchisi">
+<meta property="og:description" content="10 yillik staj. Ta'lim dasturlarini tuzaman, o'qituvchi va talabalarga treninglar o'taman, darslik hamda o'quv qo'llanmalar yarataman.">
+<meta property="og:image" content="https://nozimaustoz.github.io/shaxsiy-sayt/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="uz_UZ">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
 
-  <!-- ================= TEMA TUGMASI ================= -->
-  <div class="topbar">
+  <!-- ================= YOPISHUVCHI MENYU + TEMA TUGMASI ================= -->
+  <header class="topbar">
+    <nav class="menu" aria-label="Asosiy menyu">
+      <a href="#xizmatlar">Xizmatlar</a>
+      <a href="#loyihalar">Loyihalar</a>
+      <a href="#fikrlar">Fikrlar</a>
+      <a href="#savol-javob">Savol-javob</a>
+      <a href="#aloqa">Aloqa</a>
+    </nav>
     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Temani almashtirish">
       <svg class="moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       <svg class="sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       <span class="label-dark">Qorong'i</span>
       <span class="label-light">Yorug'</span>
     </button>
-  </div>
+  </header>
 
   <!-- ================= HERO ================= -->
   <section class="hero">
@@ -40,7 +64,7 @@
   </section>
 
   <!-- ================= XIZMATLAR ================= -->
-  <section class="service">
+  <section class="service" id="xizmatlar">
     <span class="num">01</span>
     <div>
       <h2>Ta'lim dasturlarini tuzish</h2>
@@ -121,6 +145,80 @@
         <p>Fan bo'yicha darslik matni tuzildi va nashrga tayyorlandi.</p>
         <span class="year">2022</span>
       </article>
+
+    </div>
+  </section>
+
+  <!-- ================= MIJOZLAR FIKRI ================= -->
+  <!-- Sharh matnlari — namuna. Ism va lavozimni faqat rozilik bergan haqiqiy odam bilan to'ldiring -->
+  <section id="fikrlar">
+    <h2 class="section-title">Mijozlar fikri</h2>
+    <div class="quotes">
+
+      <figure class="quote">
+        <blockquote>
+          Sillabus qayta ishlangandan keyin dastur mazmuni aniq o'quv natijalariga
+          bog'landi. Kafedra o'qituvchilari uchun baholash mezonlari ancha
+          tushunarli bo'ldi.
+        </blockquote>
+        <figcaption>
+          <strong>[Ism Familiya]</strong>
+          <span>[Lavozim, tashkilot]</span>
+        </figcaption>
+      </figure>
+
+      <figure class="quote">
+        <blockquote>
+          Trening amaliy o'tdi — quruq nazariya emas, darsda darhol qo'llasa
+          bo'ladigan usullar ko'rsatildi. Keyingi semestrda o'zim sinab ko'rdim.
+        </blockquote>
+        <figcaption>
+          <strong>[Ism Familiya]</strong>
+          <span>[Lavozim, tashkilot]</span>
+        </figcaption>
+      </figure>
+
+      <figure class="quote">
+        <blockquote>
+          Qo'llanma tuzilmasi puxta o'ylangan, topshiriqlar talabalar darajasiga
+          mos. Nashrga tayyorlash bosqichida ham yordami tegdi.
+        </blockquote>
+        <figcaption>
+          <strong>[Ism Familiya]</strong>
+          <span>[Lavozim, tashkilot]</span>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ================= SAVOL-JAVOB ================= -->
+  <section id="savol-javob">
+    <h2 class="section-title">Savol-javob</h2>
+    <div class="faq">
+
+      <details>
+        <summary>Hamkorlikni qanday boshlash mumkin?</summary>
+        <p>
+          Quyidagi telefon raqami yoki Telegram orqali bog'lanasiz. Suhbatda vazifa
+          hajmi va muddatlar aniqlashtiriladi.
+        </p>
+      </details>
+
+      <details>
+        <summary>Qaysi fanlar va yo'nalishlar bo'yicha ishlaysiz?</summary>
+        <p>[Javob — o'zingiz ishlaydigan fan va yo'nalishlarni shu yerga yozing.]</p>
+      </details>
+
+      <details>
+        <summary>Ta'lim dasturini tuzish qancha vaqt oladi?</summary>
+        <p>[Javob — odatdagi muddatni shu yerga yozing.]</p>
+      </details>
+
+      <details>
+        <summary>Treninglar qayerda va qanday formatda o'tkaziladi?</summary>
+        <p>[Javob — joy, guruh hajmi va onlayn/oflayn formatini shu yerga yozing.]</p>
+      </details>
 
     </div>
   </section>
