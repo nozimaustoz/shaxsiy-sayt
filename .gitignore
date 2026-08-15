@@ -1,0 +1,24 @@
+# Maxfiy ma'lumotlar — hech qachon repozitoriyga tushmasin
+.env
+.env.*
+*.key
+*.pem
+secrets.*
+
+# Windows / macOS tizim fayllari
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Tahrirlagich sozlamalari
+.vscode/
+.idea/
+*.swp
+*~
+
+# Loglar va vaqtinchalik fayllar
+*.log
+*.tmp
+*.bak
