@@ -56,13 +56,10 @@ if (harakatOchiq && 'IntersectionObserver' in window) {
 }
 
 // ===== Rasm hali qo'yilmagan bo'lsa, inisiallar ko'rsatiladi =====
-// Rasm HTML'dan butunlay olib tashlangan bo'lishi ham mumkin — shuning uchun tekshiriladi
 var photo = document.getElementById('photo');
-if (photo) {
-  photo.addEventListener('error', function () {
-    photo.parentElement.classList.add('no-image');
-  });
-  if (photo.complete && photo.naturalWidth === 0) {
-    photo.parentElement.classList.add('no-image');
-  }
+photo.addEventListener('error', function () {
+  photo.parentElement.classList.add('no-image');
+});
+if (photo.complete && photo.naturalWidth === 0) {
+  photo.parentElement.classList.add('no-image');
 }
