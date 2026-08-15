@@ -5,6 +5,9 @@
 *.pem
 secrets.*
 
+# Boshqa manbadan olingan rasm — saytga qo'yilmaydi, GitHub'ga ham yuborilmaydi
+images/images.jfif
+
 # Windows / macOS tizim fayllari
 Thumbs.db
 ehthumbs.db
